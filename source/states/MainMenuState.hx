@@ -216,9 +216,14 @@ class MainMenuState extends MusicBeatState
 								switch (daChoice)
 								{
 									case 'story_mode':
-									//	MusicBeatState.switchState(new PlayState /*StoryMenuState*/());
-										PlayState.SONG = backend.Song.loadFromJson("bopeebo", "bopeebo"); //Song Loading Thing
-										FlxG.switchState(new PlayState());
+									MusicBeatState.switchState(new FreeplayState());
+								/*	var thepoopooweek = WeekData.weeksLoaded.get('tutorial');
+									var songArray:Array<String> = [];
+									var leWeek:Array<Dynamic> = thepoopooweek.songs;
+									PlayState.storyPlaylist = songArray;
+                                    PlayState.isStoryMode = false; */
+									//	PlayState.SONG = backend.Song.loadFromJson("bopeebo", "bopeebo"); //Song Loading Thing
+									//	FlxG.switchState(new PlayState());
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
 									#if MODS_ALLOWED

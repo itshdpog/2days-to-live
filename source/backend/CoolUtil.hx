@@ -125,4 +125,8 @@ class CoolUtil
 			+ '/'
 			+ FlxSave.validate(FlxG.stage.application.meta.get('file')) #end;
 	}
+
+	public static function getDifficultyFilePath(arg0:Int) {
+		throw new haxe.exceptions.NotImplementedException();
+	}
 }
